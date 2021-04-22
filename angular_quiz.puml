@@ -1,0 +1,30 @@
+@startuml
+
+  Game "1"---"n" Question
+
+  class App <component> {
+       - Game 
+       - 
+  }
+
+  class Game <service> {
+      - currentQuestion:Question
+      - QuestionList:Array<Question>
+      - numberOfQuestion:number
+      - questions:Array
+      - correctAnswers:number
+      - wrongAnswars:number
+      ' imposta la partita imposta la pria domanda
+      + prepareGame()
+      + getCurrentQuestion() 
+  }
+
+  class Question <model> {
+      - question:string
+      - difficulty:string
+      - questionText:string
+      - incorrectAnswers:Array<string>
+      - correctAnswer:string
+  }
+
+@enduml
