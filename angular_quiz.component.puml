@@ -1,0 +1,13 @@
+@startuml
+
+  App --- GameComponent
+  App --- MainHeader
+  App --- Footer
+
+  GameComponent --- QuestionHeader 
+  GameComponent --- AnswersList
+  GameComponent --- GameControls
+
+  class App <component> {}
+  
+@enduml
