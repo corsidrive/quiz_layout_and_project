@@ -10,7 +10,7 @@
   GameComponent --- GameProgressBar
 
   class App <component> {}
-  class MainHeader {
+  class MainHeader <component>{
     +title (Quiz)
     +lead (giochiamo open trivial)
   }
